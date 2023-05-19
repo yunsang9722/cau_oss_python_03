@@ -21,7 +21,7 @@ class line:
     """
 
     _length=0
-    def _init_(self,length):
+    def __init__(self,length):
         """
         생성자의 초기 length 값을 받는다. 
         Args:
