@@ -37,7 +37,7 @@ class line:
         """
         return self.__width, self.__heigth
     
-    def area_rectangle(width, height):
+def area_rectangle(width, height):
         """길이를 입력받아 직사각형의 넓이를 구하는 함수
         Args:
             width (int or float):밑변의 길이
@@ -47,7 +47,8 @@ class line:
         """
         if width <= 0 or height <= 0 : raise ValueError
         return width * height
-    def area_ellipse(width, height):
+    
+def area_ellipse(width, height):
         """길이를 입력받아 타원의 넓이를 구하는 함수
         Args:
             width (int or float):짧은쪽 반지름 길이
@@ -56,8 +57,9 @@ class line:
             int or float:타원의 넓이를 반환
         """
         if width <= 0 or height <= 0 : raise ValueError
-        return width * height * math.pi
-    def area_right_triangle(width, height):
+        return width * height * math.pi    
+    
+def area_right_triangle(width, height):
         """길이를 입력받아 직각삼각형의 넓이를 구하는 함수
         Args:
             width (int or float):밑변의 길이
@@ -67,3 +69,4 @@ class line:
         """
         if width <= 0 or height <= 0 : raise ValueError
         return width * height / 2
+        
